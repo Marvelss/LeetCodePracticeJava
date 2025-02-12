@@ -12,26 +12,28 @@ package binaryTree;
  * root.right = mergeTrees(root1.right, root2.right);
  */
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
 
-    TreeNode() {
+import javax.swing.tree.TreeNode;
+
+class review76 {
+    static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
     }
-
-    TreeNode(int val) {
-        this.val = val;
-    }
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
-
-class Solution {
     public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
         if (root1 == null) {
             return root2;
