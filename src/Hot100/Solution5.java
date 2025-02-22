@@ -61,7 +61,6 @@ public class Solution5 {
                 difference -= 1;
             }
         }
-
 //        判断是否香蕉
         while (headB != null) {
             if (headA == headB) return headB;
