@@ -12,19 +12,20 @@ package Hot100;/*
  */
 
 
-class Node {
-    Node[] son = new Node[26];
-    boolean end;
-
-}
-
 public class Solution23 {
-    private Node root;
 
     public Solution23() {
         root = new Node();
 
     }
+
+    static class Node {
+        Node[] son = new Node[26];
+        boolean end;
+
+    }
+
+    private Node root;
 
     public void insert(String word) {
         Node cur = root;
