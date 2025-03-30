@@ -10,11 +10,10 @@ package Hot100;/*
  4.注意遍历以hash集合为基准
  */
 
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Solution81 {
+public class Solution50 {
     public int longestConsecutive(int[] nums) {
         Set<Integer> map = new HashSet<>();
         int ans = 0;
