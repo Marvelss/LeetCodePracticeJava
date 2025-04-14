@@ -8,7 +8,7 @@ import java.util.List;
  * @Author : Vagrant
  * @Time: 2025-04-14 16:25
  * @File : DoublePointer4.java
- * @Description :16. 最接近的三数之和（卡在s与target比较，而不是s与0，以维护当前和与目标差值）
+ * @Description :双指针-相向-16. 最接近的三数之和（卡在s与target比较，而不是s与0，以维护当前和与目标差值）-3
  * 总体思路：基于15. 三数之和-3，
  * 若s-target<以维护当前和与目标差值
  * 注意：且s与target比较，而不是s与0
