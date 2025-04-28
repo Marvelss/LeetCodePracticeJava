@@ -6,8 +6,9 @@ import java.util.List;
  * @Author : Vagrant
  * @Time: 2025-04-28 19:54
  * @File : BinaryTree4.java
- * @Description :二叉树与递归-深入理解-129. 求根节点到叶节点数字之和-1（思路可以，但可能不是最优）
- * 总体思路：基于112. 路径总和，多了一个路径的保存参数
+ * @Description :二叉树与递归-深入理解-129. 求根节点到叶节点数字之和-1（思路可以，但可能不是最优，最优为思路2）
+ * 总体思路2：不单独多一个路径保存参数，而是相加时，直接当前路径数字乘以10,从而拼接成符合题解数字：x = x * 10 + node.val
+ * 总体思路1：基于112. 路径总和，多了一个路径的保存参数
  * 注意1：路径保存path需要回溯
  * 2.理解引用和值的关系，解决：回溯和传入参数但参数为变化情况-如下代码是很好的案例-cnt结果一直为0；回溯：path.deleteCharAt(path.length() - 1);
  * private void traverse(TreeNode root, int cnt, StringBuilder path) {
